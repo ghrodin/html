@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 182px;
+            height: 269px;
+            position: absolute;
+        }
+
+        #A {
+            background: url(./images/deadgod.png);
+            background-repeat: no-repeat;
+            z-index: 1;
+            left: 20px;
+            top: 100px;
+        }
+
+        #B {
+            background-image: url(./images/flower.png);
+            background-repeat: no-repeat;
+            z-index: 2;
+            left: 100px;
+            top: 100px;
+        }
+
+        #C {
+            background-image: url(./images/tear.png);
+            background-repeat: no-repeat;
+            z-index: 3;
+            left: 180px;
+            top: 100px;
+        }
+
+        #D {
+            background-image: url(./images/Trax.png);
+            background-repeat: no-repeat;
+            z-index: 4;
+            left: 260px;
+            top: 100px;
+        }
+        .role1:hover{
+            transform: translateX(800px);
+            transition: 1s;
+        }
+        .role2:hover{
+            transform: translateX(700px);
+            transition: 1s;
+        }
+        .role3:hover{
+            transform: translateX(600px);
+            transition: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="A"></div>
+    <div id="B" class="role1"></div>
+    <div id="C" class="role2"></div>
+    <div id="D" class="role3"></div>
+</body>
+
+</html>

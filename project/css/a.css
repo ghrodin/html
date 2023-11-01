@@ -1,0 +1,6 @@
+p {
+    border: 1px solid red;
+    font-size: 40px;
+}
+/* 平平无奇的外部css样式文件，
+在html文件中使用link标签导入即可*/

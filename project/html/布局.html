@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /*消除默认页面边距*/
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /*设置主体页面*/
+        .page {
+            margin: 0 auto;
+            width: 1000px;
+            height: 600px;
+            background-color: aqua;
+        }
+
+        /*设置标题*/
+        header {
+            background-color: blue;
+            width: 1000px;
+            height: 60px;
+            text-align: center;
+            color: red;
+            font-size: 50px;
+        }
+
+        /*为左侧边栏设置样式*/
+        .page .leftside {
+            float: left;
+            width: 300px;
+            height: 400px;
+            background-color: darkorange;
+        }
+
+        /*为主要内容设置容器*/
+        .page .content {
+            float: left;
+            background-color: yellow;
+            height: 350px;
+            width: 500px;
+        }
+
+        /*为主要内容分层*/
+        .page .content ul li {
+            width: 500px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        /*为分层的各个列表设置样式*/
+        .page .content ul li:nth-child(1) {
+            height: 150px;
+            background-color: red;
+        }
+
+        .page .content ul li:nth-child(2) {
+            height: 60px;
+            background-color: blueviolet;
+        }
+
+        .page .content ul li:nth-child(3) {
+
+            background-color: burlywood;
+        }
+
+        .page .content ul li:nth-child(4) {
+            background-color: lightpink;
+        }
+
+        .page .content ul li:nth-child(5) {
+            height: 60px;
+            background-color: saddlebrown;
+        }
+
+        /*为右侧边栏设置样式*/
+        .page .rightside {
+            float: left;
+            background-color: green;
+            height: 350px;
+            width: 200px
+        }
+
+        /*为额外部分设置样式*/
+        .page .addition {
+            float: left;
+            width: 700px;
+            height: 50px;
+            background-color: gold;
+            text-align: center;
+            font-size: 30px;
+            margin: 0 auto;
+        }
+
+        /*清除浮动的影响*/
+        .clear {
+            background-color: antiquewhite;
+            height: 10px;
+            clear: both;
+        }
+
+        /*为填充部分设置样式*/
+        .residue {
+            height: 130px;
+            background-color: black;
+            width: 1000px;
+        }
+
+        /*对填充物设置样式*/
+        .residue img {
+            width: 196px;
+            height: 130px;
+            margin-right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <header>标题栏目1</header>
+        <div class="clear"></div>
+        <section class="leftside">左侧边栏部分</section>
+        <div class="content">
+            <ul style="list-style: none;">
+                <li>内容1</li>
+                <li>内容2</li>
+                <li>内容3</li>
+                <li>内容4</li>
+                <li>内容5</li>
+            </ul>
+        </div>
+        <section class="rightside">右侧边栏部分</section>
+        <section class="addition">底部额外部分</section>
+        <div class="clear"></div>
+        <div class="residue">
+            <img src="../images/baidu.png">
+            <img src="../images/baidu.png">
+            <img src="../images/baidu.png">
+            <img src="../images/baidu.png">
+            <img src="../images/baidu.png">
+        </div>
+    </div>
+</body>
+
+</html>

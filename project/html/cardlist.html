@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="chinese">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(../images/bg.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 80px;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .rolelist {
+            height: 350px;
+            width: 1150px;
+            margin: 200px auto;
+        }
+
+        .role {
+            /* float: left; */
+            width: 200px;
+            margin-right: 20px;
+            transition: 0.5s;
+        }
+
+        .role:hover {
+            transform: translateY(-30px);
+        }
+
+        p {
+            font-size: 30px;
+            color: red;
+        }
+
+        .hidden {
+            float: left;
+            width: 200px;
+            overflow: hidden;
+            transform: translateY(30px);
+        }
+
+        .hidden:hover {
+            transition: 1s;
+            transform: translateY(-30px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to YU GI YO!!!</h1>
+    <div class="rolelist">
+        <a href="https://ygocdb.com/card/98127546/" target="_blank">
+            <img src="../images/deadgod.png" class="role" title="卡片介绍">
+        </a>
+        <a href="https://ygocdb.com/card/84815190/" target="_blank">
+            <img src="../images/flower.png" class="role" title="卡片介绍">
+        </a>
+        <a href="https://ygocdb.com/card/28226490/" target="_blank">
+            <img src="../images/tear.png" class="role" title="卡片介绍">
+        </a>
+        <a href="https://ygocdb.com/card/90448279/" target="_blank">
+            <img src="../images/weapon.png" class="role" title="卡片介绍">
+        </a>
+        <a href="https://ygocdb.com/card/13331639/" target="_blank">
+            <img src="../images/Trax.png" class="role" title="卡片介绍">
+            <img src="../images/weapon.png" class="hidden">
+        </a>
+    </div>
+</body>
+
+</html>

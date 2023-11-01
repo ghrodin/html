@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function imgChange() {
+            var t = document.getElementById("myimage");
+            if (t.src.match("flower")) {
+                //src.match(string)表示若路径中包含string的内容则返回true
+                t.src = "./images/deadgod.png";
+            }
+            else {
+                t.src = "./images/flower.png";
+            }
+        }
+        function fun(){
+           window.alert("hh");
+        }
+    </script>
+    <img id="myimage" src="./images/flower.png" class="role" title="卡片介绍">
+    <hr>
+    <button onclick="imgChange()">更换</button>
+    <button onclick="fun()">弹出</button>
+    <br>
+</body>
+
+</html>

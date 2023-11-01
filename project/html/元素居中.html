@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .father {
+        margin: auto;
+        width: 500px;
+        height: 60px;
+        background-color: aqua;
+        text-align: center;
+        /*行内元素水平居中，在父元素中使用该样式*/
+        line-height: 60px;
+        /*行内元素垂直居中，在父元素中使用该样式（文本行高等于盒子高度）*/
+    }
+
+    .dad {
+        position: relative;
+        background-color: greenyellow;
+        min-height: 500px;
+    }
+
+    .son {
+        position: absolute;
+        background: red;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .flexfather {
+        display: flex;
+        min-height: 500px;
+        background: pink;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flexson {
+
+        margin: auto;
+        background: lightyellow;
+    }
+</style>
+
+<body>
+    <h1>行内元素（文字，图片，视频等）水平垂直居中</h1>
+    <div class="father">
+        行内元素
+    </div>
+    <hr>
+    <h1>块级元素水平垂直居中</h1>
+    <p>实现块级元素水平垂直居中，通常由两种方式。一种为绝对定位+translate；另一种为flex布局+margin:auto</p>
+    <div class="dad">
+        <p class="son">(绝对定位+translate)这种写法，在没有指定子元素宽高的情况下，也能让其在父容器中垂直居中。因为 translate()
+            函数中使用百分比值时，是以这个元素自身的宽度和高度为基准进行换算和移动的（动态计算宽高）。</p>
+    </div>
+    <div class="flexfather">
+        <p class="flexson">当我们给父容器使用 Flex 布局 时，子元素的margin: auto不仅能让其在水平方向上居中，垂直方向上也是居中的。即可让这个指定的子元素在剩余空间里，水平垂直居中。</p>
+    </div>
+</body>
+
+</html>
